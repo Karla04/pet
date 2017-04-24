@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_centerVertical="true"
+            android:text="Username"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView01"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType=""
+            tools:ignore="LabelFor,ObsoleteLayoutParam" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/password"
+            android:layout_alignLeft="@+id/password"
+            android:text="Password"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/login"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:ignore="LabelFor,ObsoleteLayoutParam" />
+
+        <Button
+            android:id="@+id/login"
+            style="@android:style/Widget.Holo.Light.Button.Toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_incio_sesion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            tools:ignore="HardcodedText,InefficientWeight" />
+
+        <Button
+            android:id="@+id/register"
+            style="@android:style/Widget.Holo.Light.Button.Toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_registrarse"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            tools:ignore="HardcodedText,InefficientWeight" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

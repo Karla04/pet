@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/password"
+            android:layout_centerVertical="true"
+            android:text="Username"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:ems="30"
+            tools:ignore="LabelFor,ObsoleteLayoutParam,RtlHardcoded,TextFields" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:text="Password"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColorHint="@android:color/white"
+            tools:ignore="LabelFor,TextFields"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/register"
+            style="@android:style/Widget.Holo.Light.Button.Toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_registrarse"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            tools:ignore="HardcodedText,InefficientWeight" />
+
+    </LinearLayout>
+
+</RelativeLayout>
